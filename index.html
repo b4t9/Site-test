@@ -2,31 +2,37 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>БЕКУЛАН</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(270deg,
         red, orange, yellow, green, blue, indigo, violet);
       background-size: 1400% 1400%;
       animation: rainbow 20s ease infinite;
-      overflow: hidden;
-      padding: 20px;
       text-align: center;
+      box-sizing: border-box;
+      padding: 20px;
     }
 
     h1 {
-      font-size: clamp(2.5rem, 10vw, 6rem);
+      font-size: clamp(2.5rem, 8vw, 5rem);
       color: white;
       text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
       animation: pulse 3s infinite;
-      z-index: 2;
       margin: 0;
     }
 
@@ -52,13 +58,9 @@
     }
 
     audio {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
+      margin-top: 30px;
+      width: 100%;
       max-width: 400px;
-      z-index: 1;
     }
   </style>
 </head>
