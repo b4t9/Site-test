@@ -17,14 +17,17 @@
       background-size: 1400% 1400%;
       animation: rainbow 20s ease infinite;
       overflow: hidden;
+      padding: 20px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: clamp(2.5rem, 10vw, 6rem);
       color: white;
       text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
       animation: pulse 3s infinite;
       z-index: 2;
+      margin: 0;
     }
 
     @keyframes rainbow {
@@ -53,6 +56,8 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
+      width: 90%;
+      max-width: 400px;
       z-index: 1;
     }
   </style>
